@@ -1,8 +1,8 @@
 const baseFont = document.querySelector('#baseFont');
 const inPoints = document.querySelector('#fontinPoints');
 const convertButton = document.querySelector('#go');
-const vwPara = document.querySelector('#fontInVW');
-const vhPara = document.querySelector('#fontInVH');
+const vw = document.querySelector('#inVW');
+const vh = document.querySelector('#inVH');
 
 let inBaseValue;
 let inPointsValue;
@@ -29,6 +29,6 @@ convertButton.addEventListener('click', () => {
     console.log(inBaseValue, inPointsValue);
     fontSizer(inBaseValue, inPointsValue);
     console.log(final, forMobile);
-    vwPara.textContent = `In VW : ${final}vw`;
-    vhPara.textContent = `In VH (for Mobile) : ${forMobile}vh`;
+    vw.textContent = final;
+    vh.textContent = forMobile;
 });

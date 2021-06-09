@@ -8,13 +8,18 @@
     <title>Font Size Converter</title>
 </head>
 <body>
-    <h1>Font Size Converter</h1>
-    <input type="text" id="baseFont" name="baseFont" placeholder="Input base font size in px">
-    <input type="text" id="fontinPoints" name="fontinPoints" placeholder="Font in Points">
-    <button id="go">Convert</button>
-
-    <p id="fontInVW">In VW : </p>
-    <p id="fontInVH">In VH (for Mobile) : </p>
+    <section class="section">
+        <div class="main">
+            <h1 class="heading">Font Size Converter</h1>
+            <input class="input" type="text" id="baseFont" name="baseFont" placeholder="Input base font size in px">
+            <input class="input" type="text" id="fontinPoints" name="fontinPoints" placeholder="Font in Points">
+            <button class="button" id="go">Convert</button>
+            <div class="results">
+                <p class="resultP" id="fontInVW">In VW : <br><span id="inVW">0</span></p>
+                <p class="resultP" id="fontInVH">In VH : <br><span id="inVH">0</span></p>
+            </div>
+        </div>
+    </section>
 
     <script src="./script.js"></script>
 </body>
