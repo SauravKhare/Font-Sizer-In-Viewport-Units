@@ -29,6 +29,6 @@ convertButton.addEventListener('click', () => {
     console.log(inBaseValue, inPointsValue);
     fontSizer(inBaseValue, inPointsValue);
     console.log(final, forMobile);
-    vw.textContent = final;
-    vh.textContent = forMobile;
+    vw.textContent = final.toFixed(2);
+    vh.textContent = forMobile.toFixed(2);
 });

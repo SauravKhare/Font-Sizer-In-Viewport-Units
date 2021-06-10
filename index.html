@@ -15,8 +15,20 @@
             <input class="input" type="text" id="fontinPoints" name="fontinPoints" placeholder="Font in Points">
             <button class="button" id="go">Convert</button>
             <div class="results">
-                <p class="resultP" id="fontInVW">In VW : <br><span id="inVW">0</span></p>
-                <p class="resultP" id="fontInVH">In VH : <br><span id="inVH">0</span></p>
+                <div class="resultLeft">
+                    <span class="value-number" id="inVW">0</span>
+                    <span class="resultP" id="fontInVW">vw</span>
+                </div>
+                <div class="resultRight">
+                    <span class="value-number" id="inVH">0</span>
+                    <span class="resultP" id="fontInVH">vh</span>
+                </div>
+            </div>
+            <div class="info">
+                <ol>
+                    <li>This converter converts points into viewport units.</li>
+                    <li>Use VW for regular sizing an VH for mobile sizing.</li>
+                </ol>
             </div>
         </div>
     </section>
